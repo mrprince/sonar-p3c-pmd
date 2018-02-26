@@ -19,32 +19,23 @@
  */
 package org.sonar.plugins.pmd;
 
-import com.google.common.collect.ImmutableList;
-import org.sonar.api.SonarPlugin;
-import org.sonar.api.config.PropertyDefinition;
+import org.sonar.api.server.rule.RulesDefinition;
+import org.sonar.plugins.java.Java;
 
-import java.util.List;
+public final class PmdP3CRulesDefinition implements RulesDefinition {
 
-public class PmdPlugin extends SonarPlugin {
-
-  @Override
-  public List getExtensions() {
-    return ImmutableList.of(
-      PropertyDefinition.builder(PmdConfiguration.PROPERTY_GENERATE_XML)
-        .defaultValue("false")
-        .name("Generate XML Report")
-        .hidden()
-        .build(),
-
-      PmdSensor.class,
-      PmdConfiguration.class,
-      PmdExecutor.class,
-      PmdRulesDefinition.class,
-      PmdUnitTestsRulesDefinition.class,
-      PmdP3CRulesDefinition.class,
-      PmdProfileExporter.class,
-      PmdProfileImporter.class,
-      PmdViolationRecorder.class);
+  public PmdP3CRulesDefinition() {
+    // Do nothing
   }
 
+  @Override
+  public void define(Context context) {
+    NewRepository repository = context
+      .createRepository(PmdConstants.P3C_REPOSITORY_KEY, Java.KEY)
+      .setName(PmdConstants.P3C_REPOSITORY_NAME);
+
+    PmdRulesDefinition.extractRulesData(repository, "/org/sonar/plugins/pmd/rules-p3c.xml", "/org/sonar/l10n/pmd/rules/pmd-p3c");
+
+    repository.done();
+  }
 }

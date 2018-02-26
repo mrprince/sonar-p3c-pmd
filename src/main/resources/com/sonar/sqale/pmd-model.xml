@@ -3925,4 +3925,26 @@
       </chc>
     </chc>
   </chc>
+
+  <chc>
+    <key>P3C-PMD</key>
+    <name>p3c-pmd</name>
+    <chc>
+      <key>UNIT_P3C_PMD</key>
+      <name>Unit p3c pmd</name>
+      <chc>
+        <rule-repo>pmd-p3c</rule-repo>
+        <rule-key>CommentsMustBeJavadocFormatRule</rule-key>
+        <prop>
+          <key>remediationFunction</key>
+          <txt>CONSTANT_ISSUE</txt>
+        </prop>
+        <prop>
+          <key>offset</key>
+          <val>2</val>
+          <txt>min</txt>
+        </prop>
+      </chc>
+    </chc>
+  </chc>
 </sqale>

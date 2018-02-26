@@ -1,0 +1,7 @@
+<rules>
+  <!--p3c-->
+  <rule key="CommentsMustBeJavadocFormatRule">
+    <priority>MAJOR</priority>
+    <configKey><![CDATA[rulesets/java/ali-comment.xml/CommentsMustBeJavadocFormatRule]]></configKey>
+  </rule>
+</rules>
