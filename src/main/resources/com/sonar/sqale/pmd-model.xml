@@ -4453,6 +4453,60 @@
                     <txt>min</txt>
                 </prop>
             </chc>
+
+            <!--AlibabaJavaOthers-->
+            <chc>
+                <rule-repo>pmd</rule-repo>
+                <rule-key>AvoidPatternCompileInMethodRule</rule-key>
+                <prop>
+                    <key>remediationFunction</key>
+                    <txt>CONSTANT_ISSUE</txt>
+                </prop>
+                <prop>
+                    <key>offset</key>
+                    <val>2</val>
+                    <txt>min</txt>
+                </prop>
+            </chc>
+            <chc>
+                <rule-repo>pmd</rule-repo>
+                <rule-key>AvoidApacheBeanUtilsCopyRule</rule-key>
+                <prop>
+                    <key>remediationFunction</key>
+                    <txt>CONSTANT_ISSUE</txt>
+                </prop>
+                <prop>
+                    <key>offset</key>
+                    <val>2</val>
+                    <txt>min</txt>
+                </prop>
+            </chc>
+            <chc>
+                <rule-repo>pmd</rule-repo>
+                <rule-key>AvoidNewDateGetTimeRule</rule-key>
+                <prop>
+                    <key>remediationFunction</key>
+                    <txt>CONSTANT_ISSUE</txt>
+                </prop>
+                <prop>
+                    <key>offset</key>
+                    <val>2</val>
+                    <txt>min</txt>
+                </prop>
+            </chc>
+            <chc>
+                <rule-repo>pmd</rule-repo>
+                <rule-key>AvoidMissUseOfMathRandomRule</rule-key>
+                <prop>
+                    <key>remediationFunction</key>
+                    <txt>CONSTANT_ISSUE</txt>
+                </prop>
+                <prop>
+                    <key>offset</key>
+                    <val>2</val>
+                    <txt>min</txt>
+                </prop>
+            </chc>
         </chc>
     </chc>
 </sqale>

@@ -167,4 +167,21 @@
         <configKey><![CDATA[rulesets/java/ali-oop.xml/PojoMustOverrideToStringRule]]></configKey>
     </rule>
 
+    <!--AlibabaJavaOthers-->
+    <rule key="AvoidPatternCompileInMethodRule">
+        <priority>CRITICAL</priority>
+        <configKey><![CDATA[rulesets/java/ali-other.xml/AvoidPatternCompileInMethodRule]]></configKey>
+    </rule>
+    <rule key="AvoidApacheBeanUtilsCopyRule">
+        <priority>CRITICAL</priority>
+        <configKey><![CDATA[rulesets/java/ali-other.xml/AvoidApacheBeanUtilsCopyRule]]></configKey>
+    </rule>
+    <rule key="AvoidNewDateGetTimeRule">
+        <priority>CRITICAL</priority>
+        <configKey><![CDATA[rulesets/java/ali-other.xml/AvoidNewDateGetTimeRule]]></configKey>
+    </rule>
+    <rule key="AvoidMissUseOfMathRandomRule">
+        <priority>CRITICAL</priority>
+        <configKey><![CDATA[rulesets/java/ali-other.xml/AvoidMissUseOfMathRandomRule]]></configKey>
+    </rule>
 </rules>
