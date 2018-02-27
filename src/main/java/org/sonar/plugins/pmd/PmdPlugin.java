@@ -41,7 +41,6 @@ public class PmdPlugin extends SonarPlugin {
       PmdExecutor.class,
       PmdRulesDefinition.class,
       PmdUnitTestsRulesDefinition.class,
-      PmdP3CRulesDefinition.class,
       PmdProfileExporter.class,
       PmdProfileImporter.class,
       PmdViolationRecorder.class);
