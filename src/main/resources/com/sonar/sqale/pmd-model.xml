@@ -4507,6 +4507,86 @@
                     <txt>min</txt>
                 </prop>
             </chc>
+
+            <!--AlibabaJavaSets-->
+            <chc>
+                <rule-repo>pmd</rule-repo>
+                <rule-key>ClassCastExceptionWithToArrayRule</rule-key>
+                <prop>
+                    <key>remediationFunction</key>
+                    <txt>CONSTANT_ISSUE</txt>
+                </prop>
+                <prop>
+                    <key>offset</key>
+                    <val>2</val>
+                    <txt>min</txt>
+                </prop>
+            </chc>
+            <chc>
+                <rule-repo>pmd</rule-repo>
+                <rule-key>UnsupportedExceptionWithModifyAsListRule</rule-key>
+                <prop>
+                    <key>remediationFunction</key>
+                    <txt>CONSTANT_ISSUE</txt>
+                </prop>
+                <prop>
+                    <key>offset</key>
+                    <val>2</val>
+                    <txt>min</txt>
+                </prop>
+            </chc>
+            <chc>
+                <rule-repo>pmd</rule-repo>
+                <rule-key>ClassCastExceptionWithSubListToArrayListRule</rule-key>
+                <prop>
+                    <key>remediationFunction</key>
+                    <txt>CONSTANT_ISSUE</txt>
+                </prop>
+                <prop>
+                    <key>offset</key>
+                    <val>2</val>
+                    <txt>min</txt>
+                </prop>
+            </chc>
+            <chc>
+                <rule-repo>pmd</rule-repo>
+                <rule-key>ConcurrentExceptionWithModifyOriginSubListRule</rule-key>
+                <prop>
+                    <key>remediationFunction</key>
+                    <txt>CONSTANT_ISSUE</txt>
+                </prop>
+                <prop>
+                    <key>offset</key>
+                    <val>2</val>
+                    <txt>min</txt>
+                </prop>
+            </chc>
+            <chc>
+                <rule-repo>pmd</rule-repo>
+                <rule-key>DontModifyInForeachCircleRule</rule-key>
+                <prop>
+                    <key>remediationFunction</key>
+                    <txt>CONSTANT_ISSUE</txt>
+                </prop>
+                <prop>
+                    <key>offset</key>
+                    <val>2</val>
+                    <txt>min</txt>
+                </prop>
+            </chc>
+            <chc>
+                <rule-repo>pmd</rule-repo>
+                <rule-key>CollectionInitShouldAssignCapacityRule</rule-key>
+                <prop>
+                    <key>remediationFunction</key>
+                    <txt>CONSTANT_ISSUE</txt>
+                </prop>
+                <prop>
+                    <key>offset</key>
+                    <val>2</val>
+                    <txt>min</txt>
+                </prop>
+            </chc>
         </chc>
     </chc>
 </sqale>

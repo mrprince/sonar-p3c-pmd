@@ -169,19 +169,45 @@
 
     <!--AlibabaJavaOthers-->
     <rule key="AvoidPatternCompileInMethodRule">
-        <priority>CRITICAL</priority>
+        <priority>BLOCKER</priority>
         <configKey><![CDATA[rulesets/java/ali-other.xml/AvoidPatternCompileInMethodRule]]></configKey>
     </rule>
     <rule key="AvoidApacheBeanUtilsCopyRule">
-        <priority>CRITICAL</priority>
+        <priority>BLOCKER</priority>
         <configKey><![CDATA[rulesets/java/ali-other.xml/AvoidApacheBeanUtilsCopyRule]]></configKey>
     </rule>
     <rule key="AvoidNewDateGetTimeRule">
-        <priority>CRITICAL</priority>
+        <priority>BLOCKER</priority>
         <configKey><![CDATA[rulesets/java/ali-other.xml/AvoidNewDateGetTimeRule]]></configKey>
     </rule>
     <rule key="AvoidMissUseOfMathRandomRule">
-        <priority>CRITICAL</priority>
+        <priority>MAJOR</priority>
         <configKey><![CDATA[rulesets/java/ali-other.xml/AvoidMissUseOfMathRandomRule]]></configKey>
+    </rule>
+
+    <!--AlibabaJavaSets-->
+    <rule key="ClassCastExceptionWithToArrayRule">
+        <priority>CRITICAL</priority>
+        <configKey><![CDATA[rulesets/java/ali-set.xml/ClassCastExceptionWithToArrayRule]]></configKey>
+    </rule>
+    <rule key="UnsupportedExceptionWithModifyAsListRule">
+        <priority>CRITICAL</priority>
+        <configKey><![CDATA[rulesets/java/ali-set.xml/UnsupportedExceptionWithModifyAsListRule]]></configKey>
+    </rule>
+    <rule key="ClassCastExceptionWithSubListToArrayListRule">
+        <priority>CRITICAL</priority>
+        <configKey><![CDATA[rulesets/java/ali-set.xml/ClassCastExceptionWithSubListToArrayListRule]]></configKey>
+    </rule>
+    <rule key="ConcurrentExceptionWithModifyOriginSubListRule">
+        <priority>CRITICAL</priority>
+        <configKey><![CDATA[rulesets/java/ali-set.xml/ConcurrentExceptionWithModifyOriginSubListRule]]></configKey>
+    </rule>
+    <rule key="DontModifyInForeachCircleRule">
+        <priority>BLOCKER</priority>
+        <configKey><![CDATA[rulesets/java/ali-set.xml/DontModifyInForeachCircleRule]]></configKey>
+    </rule>
+    <rule key="CollectionInitShouldAssignCapacityRule">
+        <priority>MAJOR</priority>
+        <configKey><![CDATA[rulesets/java/ali-set.xml/CollectionInitShouldAssignCapacityRule]]></configKey>
     </rule>
 </rules>
