@@ -1,5 +1,6 @@
 <rules>
   <!--p3c-->
+  <!--AlibabaJavaComments-->
   <rule key="CommentsMustBeJavadocFormatRule">
     <priority>MAJOR</priority>
     <configKey><![CDATA[rulesets/java/ali-comment.xml/CommentsMustBeJavadocFormatRule]]></configKey>
@@ -25,4 +26,33 @@
     <configKey><![CDATA[rulesets/java/ali-comment.xml/RemoveCommentedCodeRule]]></configKey>
   </rule>
 
+  <!--AlibabaJavaConcurrent-->
+  <rule key="ThreadPoolCreationRule">
+    <priority>BLOCKER</priority>
+    <configKey><![CDATA[rulesets/java/ali-concurrent.xml/ThreadPoolCreationRule]]></configKey>
+  </rule>
+  <rule key="AvoidUseTimerRule">
+    <priority>BLOCKER</priority>
+    <configKey><![CDATA[rulesets/java/ali-concurrent.xml/AvoidUseTimerRule]]></configKey>
+  </rule>
+  <rule key="ThreadShouldSetNameRule">
+    <priority>CRITICAL</priority>
+    <configKey><![CDATA[rulesets/java/ali-concurrent.xml/ThreadShouldSetNameRule]]></configKey>
+  </rule>
+  <rule key="AvoidCallStaticSimpleDateFormatRule">
+    <priority>CRITICAL</priority>
+    <configKey><![CDATA[rulesets/java/ali-concurrent.xml/AvoidCallStaticSimpleDateFormatRule]]></configKey>
+  </rule>
+  <rule key="ThreadLocalShouldRemoveRule">
+    <priority>CRITICAL</priority>
+    <configKey><![CDATA[rulesets/java/ali-concurrent.xml/ThreadLocalShouldRemoveRule]]></configKey>
+  </rule>
+  <rule key="AvoidConcurrentCompetitionRandomRule">
+    <priority>MAJOR</priority>
+    <configKey><![CDATA[rulesets/java/ali-concurrent.xml/AvoidConcurrentCompetitionRandomRule]]></configKey>
+  </rule>
+  <rule key="CountDownShouldInFinallyRule">
+    <priority>MAJOR</priority>
+    <configKey><![CDATA[rulesets/java/ali-concurrent.xml/CountDownShouldInFinallyRule]]></configKey>
+  </rule>
 </rules>
