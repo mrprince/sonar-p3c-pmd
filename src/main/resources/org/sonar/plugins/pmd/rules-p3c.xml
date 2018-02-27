@@ -141,4 +141,30 @@
         <configKey><![CDATA[rulesets/java/ali-naming.xml/ArrayNamingShouldHaveBracketRule]]></configKey>
     </rule>
 
+    <!--AlibabaJavaNaming-->
+    <rule key="EqualsAvoidNullRule">
+        <priority>CRITICAL</priority>
+        <configKey><![CDATA[rulesets/java/ali-oop.xml/EqualsAvoidNullRule]]></configKey>
+    </rule>
+    <rule key="WrapperTypeEqualityRule">
+        <priority>BLOCKER</priority>
+        <configKey><![CDATA[rulesets/java/ali-oop.xml/WrapperTypeEqualityRule]]></configKey>
+    </rule>
+    <rule key="PojoMustUsePrimitiveFieldRule">
+        <priority>MAJOR</priority>
+        <configKey><![CDATA[rulesets/java/ali-oop.xml/PojoMustUsePrimitiveFieldRule]]></configKey>
+    </rule>
+    <rule key="PojoNoDefaultValueRule">
+        <priority>MAJOR</priority>
+        <configKey><![CDATA[rulesets/java/ali-oop.xml/PojoNoDefaultValueRule]]></configKey>
+    </rule>
+    <rule key="PojoMustOverrideToStringRule">
+        <priority>MAJOR</priority>
+        <configKey><![CDATA[rulesets/java/ali-oop.xml/PojoMustOverrideToStringRule]]></configKey>
+    </rule>
+    <rule key="StringConcatRule">
+        <priority>MAJOR</priority>
+        <configKey><![CDATA[rulesets/java/ali-oop.xml/PojoMustOverrideToStringRule]]></configKey>
+    </rule>
+
 </rules>
