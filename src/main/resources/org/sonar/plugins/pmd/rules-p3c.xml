@@ -79,4 +79,18 @@
     <priority>CRITICAL</priority>
     <configKey><![CDATA[rulesets/java/ali-exception.xml/TransactionMustHaveRollbackRule]]></configKey>
   </rule>
+
+  <!--AlibabaJavaFlowControl-->
+  <rule key="SwitchStatementRule">
+    <priority>CRITICAL</priority>
+    <configKey><![CDATA[rulesets/java/ali-flowcontrol.xml/SwitchStatementRule]]></configKey>
+  </rule>
+  <rule key="NeedBraceRule">
+    <priority>BLOCKER</priority>
+    <configKey><![CDATA[rulesets/java/ali-flowcontrol.xml/NeedBraceRule]]></configKey>
+  </rule>
+  <rule key="AvoidComplexConditionRule">
+    <priority>MAJOR</priority>
+    <configKey><![CDATA[rulesets/java/ali-flowcontrol.xml/AvoidComplexConditionRule]]></configKey>
+  </rule>
 </rules>
