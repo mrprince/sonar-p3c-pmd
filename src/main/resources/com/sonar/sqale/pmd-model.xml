@@ -4104,6 +4104,34 @@
           <txt>min</txt>
         </prop>
       </chc>
+
+      <!--AlibabaJavaConcurrent-->
+      <chc>
+        <rule-repo>pmd</rule-repo>
+        <rule-key>UpperEllRule</rule-key>
+        <prop>
+          <key>remediationFunction</key>
+          <txt>CONSTANT_ISSUE</txt>
+        </prop>
+        <prop>
+          <key>offset</key>
+          <val>2</val>
+          <txt>min</txt>
+        </prop>
+      </chc>
+      <chc>
+        <rule-repo>pmd</rule-repo>
+        <rule-key>UndefineMagicConstantRule</rule-key>
+        <prop>
+          <key>remediationFunction</key>
+          <txt>CONSTANT_ISSUE</txt>
+        </prop>
+        <prop>
+          <key>offset</key>
+          <val>2</val>
+          <txt>min</txt>
+        </prop>
+      </chc>
     </chc>
   </chc>
 </sqale>

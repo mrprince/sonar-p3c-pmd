@@ -55,4 +55,14 @@
     <priority>MAJOR</priority>
     <configKey><![CDATA[rulesets/java/ali-concurrent.xml/CountDownShouldInFinallyRule]]></configKey>
   </rule>
+
+  <!--AlibabaJavaConstants-->
+  <rule key="UpperEllRule">
+    <priority>BLOCKER</priority>
+    <configKey><![CDATA[rulesets/java/ali-constant.xml/UpperEllRule]]></configKey>
+  </rule>
+  <rule key="UndefineMagicConstantRule">
+    <priority>MAJOR</priority>
+    <configKey><![CDATA[rulesets/java/ali-constant.xml/UndefineMagicConstantRule]]></configKey>
+  </rule>
 </rules>
